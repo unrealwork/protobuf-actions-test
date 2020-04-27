@@ -28,3 +28,4 @@ jobs:
         wget https://github.com/unrealwork/protobuf-actions-test/releases/download/2.5.0/protoc.tar.gz
         tar -xzvf protoc.tar.gz
         chmod +x protoc
+        protoc --version
