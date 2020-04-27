@@ -26,5 +26,5 @@ jobs:
     - name: Install Protobuf
       run: |
         wget https://github.com/unrealwork/protobuf-actions-test/releases/download/2.5.0/protoc.tar.gz
-        tar protoc.tar.gz -C /usr/local/bin
+        tar -xzvf protoc.tar.gz -C /usr/local/bin
         protoc --version
