@@ -25,7 +25,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: Install Protobuf
       run: |
-        wget https://github.com/unrealwork/protobuf-actions-test/releases/download/2.5.0/protoc.tar.gz
-        tar -xzvf protoc.tar.gz
+        curl https://repo.maven.apache.org/maven2/com/google/protobuf/protoc/2.5.0/protoc-2.5.0-linux-x86_64.exe > protoc
         chmod +x protoc
         ./protoc --version
